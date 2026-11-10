@@ -1,0 +1,563 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Minis Funnel Playbook | Rhythm Nation Studios × Base Brands</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#00143F;--cream:#EFEAE7;--gold:#DCAD67;--teal:#578A8B;--blush:#E5C3B9;--slate:#9CAAAD;
+  --bg:#FBF9F7;--card:#fff;--ink:#00143F;--text:#3B4660;--muted:#6B7488;--line:#E4DED9;--soft:#F4EFEB}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:20px}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Montserrat,Helvetica,Arial,sans-serif;font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
+a{color:var(--teal);font-weight:600}
+h1,h2,h3,h4{color:var(--ink);line-height:1.2;margin:0 0 .5em}
+h2{font-size:30px;font-weight:800;letter-spacing:-.01em}
+h3{font-size:19px;font-weight:700;margin-top:1.6em}
+h4{font-size:16px;font-weight:700;margin:1.2em 0 .4em}
+p{margin:0 0 1em}
+em.serif,.serif{font-family:'DM Serif Display',Georgia,serif;font-style:italic;font-weight:400}
+code{background:var(--soft);border:1px solid var(--line);border-radius:5px;padding:1px 6px;font-size:.88em;word-break:break-all}
+ul,ol{padding-left:1.3em;margin:0 0 1em}
+li{margin-bottom:.35em}
+
+/* hero */
+.hero{background:var(--navy);color:var(--cream);padding:56px 20px 64px}
+.hero .in{max-width:1180px;margin:0 auto}
+.hero .tag{font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--gold)}
+.hero h1{color:#fff;font-size:46px;font-weight:800;margin:14px 0 14px;letter-spacing:-.02em}
+.hero h1 .serif{color:var(--gold)}
+.hero p{max-width:720px;font-size:18px;color:rgba(239,234,231,.88)}
+.hero .meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.hero .meta span{border:1px solid rgba(220,173,103,.45);border-radius:99px;padding:6px 14px;font-size:13px;font-weight:600;color:var(--cream)}
+
+/* layout */
+.layout{max-width:1180px;margin:0 auto;padding:40px 20px 80px;display:grid;grid-template-columns:240px 1fr;gap:48px}
+nav.toc{position:sticky;top:20px;align-self:start;font-size:14px}
+nav.toc .lbl{font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:10px}
+nav.toc a{display:block;color:var(--text);font-weight:500;text-decoration:none;padding:6px 10px;border-left:2px solid var(--line)}
+nav.toc a:hover{border-color:var(--gold);color:var(--ink)}
+main{min-width:0}
+section.s{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:36px 36px 28px;margin-bottom:28px}
+.eyebrow{display:block;font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--teal);margin-bottom:8px}
+.lead{font-size:17.5px;color:var(--ink)}
+
+/* components */
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:20px 0 24px}
+.stat{background:var(--soft);border-radius:12px;padding:18px}
+.stat b{display:block;font-family:'DM Serif Display',Georgia,serif;font-weight:400;font-size:40px;color:var(--navy);line-height:1}
+.stat span{font-size:13.5px;color:var(--muted)}
+.why{counter-reset:w;list-style:none;padding:0}
+.why li{counter-increment:w;position:relative;padding:14px 16px 14px 58px;background:var(--soft);border-radius:10px;margin-bottom:10px}
+.why li:before{content:counter(w);position:absolute;left:16px;top:14px;width:28px;height:28px;border-radius:50%;background:var(--navy);color:var(--gold);font-weight:800;font-size:14px;display:flex;align-items:center;justify-content:center}
+.callout{border-left:4px solid var(--gold);background:#FBF5EA;border-radius:0 10px 10px 0;padding:14px 18px;margin:18px 0}
+.callout.teal{border-color:var(--teal);background:#EEF4F4}
+.flow{display:grid;grid-template-columns:repeat(6,1fr);gap:10px;margin:22px 0}
+.flow div{position:relative;background:var(--navy);color:var(--cream);border-radius:10px;padding:14px 12px;font-size:13.5px;font-weight:600;text-align:center;line-height:1.35}
+.flow div small{display:block;color:var(--gold);font-size:11px;font-weight:700;letter-spacing:.1em;margin-bottom:4px}
+.flow div:not(:last-child):after{content:"→";position:absolute;right:-12px;top:50%;transform:translateY(-50%);color:var(--gold);font-weight:800;z-index:1}
+.links{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:18px 0}
+.links a{display:block;text-decoration:none;border:1px solid var(--line);border-radius:12px;padding:18px;background:var(--soft);color:var(--ink);transition:border-color .15s}
+.links a:hover{border-color:var(--gold)}
+.links a b{display:block;font-size:16px;margin-bottom:4px}
+.links a span{font-size:13.5px;color:var(--muted);font-weight:500}
+.options{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:18px 0}
+.opt{border:1px solid var(--line);border-radius:12px;padding:20px}
+.opt.rec{border:2px solid var(--gold)}
+.opt .pill{display:inline-block;background:var(--gold);color:var(--navy);font-size:11px;font-weight:800;letter-spacing:.08em;border-radius:99px;padding:3px 10px;margin-bottom:8px}
+.opt h4{margin-top:0}
+.opt ul{font-size:14.5px;margin:0}
+table{width:100%;border-collapse:collapse;margin:14px 0 20px;font-size:14.5px}
+th{background:var(--navy);color:var(--cream);text-align:left;padding:10px 12px;font-weight:700;font-size:13px}
+td{border-bottom:1px solid var(--line);padding:10px 12px;vertical-align:top}
+tr:nth-child(even) td{background:#FCFAF8}
+.swatch{display:inline-block;width:14px;height:14px;border-radius:4px;vertical-align:-2px;margin-right:6px;border:1px solid rgba(0,0,0,.1)}
+.checks{list-style:none;padding:0}
+.checks li{position:relative;padding-left:32px;margin-bottom:10px}
+.checks li:before{content:"";position:absolute;left:0;top:3px;width:18px;height:18px;border:2px solid var(--teal);border-radius:5px}
+.block{border:1px solid var(--line);border-radius:12px;padding:18px 20px;margin:12px 0}
+.block h4{margin-top:0;color:var(--teal)}
+.block ul{margin-bottom:0;font-size:15px}
+details.email{border:1px solid var(--line);border-radius:12px;margin:12px 0;background:#fff}
+details.email summary{cursor:pointer;list-style:none;padding:16px 20px;display:flex;justify-content:space-between;gap:12px;align-items:center;font-weight:700;color:var(--ink)}
+details.email summary::-webkit-details-marker{display:none}
+details.email summary small{color:var(--muted);font-weight:600;font-size:12.5px;white-space:nowrap}
+details.email[open] summary{border-bottom:1px solid var(--line)}
+.email .body{padding:18px 20px}
+.email .copy-src{background:var(--soft);border-radius:10px;padding:16px 18px;font-size:14.5px;white-space:pre-wrap;font-family:inherit;margin:0 0 12px;color:var(--text)}
+.email .subj{font-size:14px;margin-bottom:10px}
+button.copy{background:var(--navy);color:var(--cream);border:0;border-radius:8px;padding:10px 16px;font:600 13.5px Montserrat,sans-serif;cursor:pointer}
+button.copy:hover{background:#0b2a6b}
+button.copy.done{background:var(--teal)}
+.steps{counter-reset:st;list-style:none;padding:0}
+.steps>li{counter-increment:st;position:relative;padding-left:44px;margin-bottom:16px}
+.steps>li:before{content:counter(st);position:absolute;left:0;top:0;width:30px;height:30px;border-radius:8px;background:var(--gold);color:var(--navy);font-weight:800;font-size:14px;display:flex;align-items:center;justify-content:center}
+.foot{background:var(--navy);color:var(--cream);text-align:center;padding:48px 20px}
+.foot h2{color:#fff}
+.foot p{color:rgba(239,234,231,.85);max-width:620px;margin:0 auto 18px}
+.foot a{color:var(--gold)}
+@media (max-width:980px){
+  .layout{grid-template-columns:1fr;gap:0}
+  nav.toc{display:none}
+  .flow{grid-template-columns:repeat(3,1fr)}
+  .flow div:nth-child(3):after{display:none}
+}
+@media (max-width:640px){
+  .hero h1{font-size:32px}
+  .hero p{font-size:16px}
+  section.s{padding:24px 18px 18px}
+  h2{font-size:24px}
+  .stats,.links,.options{grid-template-columns:1fr}
+  .flow{grid-template-columns:1fr 1fr}
+  .flow div:after{display:none}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="in">
+    <span class="tag">Rhythm Nation Studios × Base Brands · Prepared for Nicola</span>
+    <h1>Your Minis <span class="serif">funnel</span> playbook</h1>
+    <p>Everything from our marketing call in one place: what's holding the current ads back, the new plan, the pages and guide we've built, and step-by-step setup for MailerLite and Meta.</p>
+    <div class="meta"><span>Goal: 10 Minis trials a week</span><span>Budget: £5–£10 a day</span><span>Call: 10 November 2026</span></div>
+  </div>
+</header>
+
+<div class="layout">
+  <nav class="toc">
+    <div class="lbl">Contents</div>
+    <a href="#where">1. Where you are now</a>
+    <a href="#plan">2. The new plan</a>
+    <a href="#test">3. Test the funnel</a>
+    <a href="#build">4. Where to build it</a>
+    <a href="#prep">5. Before you start</a>
+    <a href="#page1">6. Page 1: guide page</a>
+    <a href="#page2">7. Page 2: booking page</a>
+    <a href="#form">8. Form &amp; redirect</a>
+    <a href="#emails">9. The 5 emails</a>
+    <a href="#meta">10. Meta tracking &amp; ads</a>
+    <a href="#content">11. Content worth boosting</a>
+    <a href="#launch">12. Launch checklist</a>
+    <a href="#term">13. Each new term</a>
+    <a href="#next">14. What's next</a>
+  </nav>
+
+  <main>
+
+    <!-- 1 -->
+    <section class="s" id="where">
+      <span class="eyebrow">1 · Where you are now</span>
+      <h2>Parents are interested. They just aren't booking yet.</h2>
+      <div class="stats">
+        <div class="stat"><b>10</b><span>Minis trials you need each week</span></div>
+        <div class="stat"><b>3–4</b><span>trials a week right now</span></div>
+        <div class="stat"><b>177</b><span>landing page views from the current ad, with no bookings you can trace</span></div>
+      </div>
+      <p>The current campaign isn't a failure. It proved there's interest and showed exactly where parents drop off. Four things are holding it back:</p>
+      <ol class="why">
+        <li><b>Meta is optimising for clicks, not bookings.</b> A Landing Page Views campaign asks Meta to find people who'll click. It's very good at that, but clickers aren't the same as bookers.</li>
+        <li><b>ClassForKids won't take your Meta pixel.</b> So we can't tell Meta "find people who book a trial", which is what we'd want to optimise for.</li>
+        <li><b>The jump from ad to booking is too big.</b> Parents land on a timetable of 62 classes and have to search for names like "Bertie Bear's Preschool Ballet Academy" that they've never heard of.</li>
+        <li><b>Nobody's details are captured.</b> Interested parents who aren't ready to book today simply disappear.</li>
+      </ol>
+      <div class="callout">You're further ahead than most studio owners we speak to: you're already running ads through Ads Manager with a business account, and you've got lead magnets. This plan builds on that.</div>
+    </section>
+
+    <!-- 2 -->
+    <section class="s" id="plan">
+      <span class="eyebrow">2 · The new plan</span>
+      <h2>Help parents first, then ask them to book</h2>
+      <p class="lead">Instead of sending cold traffic straight to "book a trial", we add a free, useful step in the middle: the Minis Parent Guide.</p>
+      <div class="flow">
+        <div><small>STEP 1</small>Meta ad offers the free guide</div>
+        <div><small>STEP 2</small>Guide page with a short form</div>
+        <div><small>STEP 3</small>Booking page says thank you</div>
+        <div><small>STEP 4</small>Guide arrives by email</div>
+        <div><small>STEP 5</small>4 follow-up emails over a week</div>
+        <div><small>STEP 6</small>Trial booked on ClassForKids</div>
+      </div>
+      <ul>
+        <li><b>The ad</b> keeps the style you're already using (your Bertie Bear video works well), but the call to action becomes "Download our free Minis Parent Guide".</li>
+        <li><b>Every "book" button</b> (in the guide, the emails and the booking page) goes straight to the exact class on ClassForKids. No more searching through 62 classes.</li>
+        <li><b>Your Minis emails are separate</b> from your general enquiry journey: one message, for one type of parent, with one goal.</li>
+        <li><b>Even parents who don't book straight away</b> become local preschool parents on your email list, and you can follow up with them for months.</li>
+      </ul>
+      <div class="callout teal"><b>What to expect:</b> at £5–£10 a day, we'd hope for around <b>15–20 guide downloads a week</b>, with leads settling somewhere around <b>£1.50–£2.50 each</b> once the campaign has optimised. These are estimates, not guarantees. Give it 5–7 days before judging.</div>
+    </section>
+
+    <!-- 3 -->
+    <section class="s" id="test">
+      <span class="eyebrow">3 · Test the funnel</span>
+      <h2>Click through it like a parent would</h2>
+      <p>These are working test versions. Click through on your phone, as most parents will see it there.</p>
+      <div class="links">
+        <a href="../minis-guide/"><b>Guide page →</b><span>Where the ad sends parents. The form is a placeholder until your MailerLite form is added.</span></a>
+        <a href="../minis-trial/?guide=thanks"><b>Booking page →</b><span>What parents see after signing up. Each button opens that class on ClassForKids.</span></a>
+        <a href="../minis-parent-guide.pdf"><b>Parent guide (PDF) →</b><span>Emailed to every parent who signs up.</span></a>
+      </div>
+      <h4>Please check</h4>
+      <ul class="checks">
+        <li>Class names, days, times and prices are all correct.</li>
+        <li><b>Wednesday 4pm Bertie Bear:</b> it's on your website but not your ClassForKids timetable, so it's left out. Is it running?</li>
+        <li><b>Saturday 9:30am Mini Movers</b> shows a waiting list. Should we push the Thursday slot in ads instead?</li>
+        <li>The first-class tips in the guide (page 5). Add anything about uniform or what to wear for a trial.</li>
+        <li>2–3 real quotes from Minis parents we can add to the guide page and Email 4.</li>
+      </ul>
+    </section>
+
+    <!-- 4 -->
+    <section class="s" id="build">
+      <span class="eyebrow">4 · Where to build it</span>
+      <h2>Two ways to put this live</h2>
+      <div class="options">
+        <div class="opt rec"><span class="pill">RECOMMENDED</span><h4>Option A: all in MailerLite</h4>
+          <ul><li>Pages, form and emails all in one place you already use</li><li>No need to wait for your WordPress designer</li><li>Pages sit on a MailerLite address unless you connect your own domain (usually a paid-plan feature)</li><li>You rebuild the pages in MailerLite's drag-and-drop builder, using sections 6 and 7</li></ul></div>
+        <div class="opt"><h4>Option B: pages on your WordPress site</h4>
+          <ul><li>Pages live on rnstudiosnotts.co.uk</li><li>Your WordPress designer pastes in two ready-made code files (below)</li><li>The form and emails still run in MailerLite</li><li>Each page is one "Code" block, about 10 minutes' work</li></ul>
+          <p style="margin:10px 0 0;font-size:14px">Files: <a href="../files/RNS-Minis-Guide-Landing-Page.html" download>guide page code</a> · <a href="../files/RNS-Minis-Trial-Booking-Hub.html" download>booking page code</a>. Setup instructions are at the top of each file.</p></div>
+      </div>
+      <p>The rest of this playbook follows <b>Option A</b>. If you choose Option B, skip sections 6 and 7 and follow the instructions at the top of each code file.</p>
+    </section>
+
+    <!-- 5 -->
+    <section class="s" id="prep">
+      <span class="eyebrow">5 · Before you start</span>
+      <h2>Get these ready first</h2>
+      <ul class="checks">
+        <li><b>Fix the Meta pixel.</b> You found three pixels and none were receiving data. Choose one, make sure it's on your website, and check it shows activity (Events Manager → your pixel → Test events).</li>
+        <li><b>Re-verify Instagram</b> in Meta Business Suite. That's why the Instagram content export wouldn't generate on our call.</li>
+        <li><b>Check your MailerLite plan</b> (Account settings → Billing). Landing pages are on the free plan. Your own domain and removing MailerLite branding usually need a paid plan.</li>
+        <li><b>Create a group</b> in MailerLite called <code>Minis Guide</code> (Subscribers → Groups).</li>
+        <li><b>Upload the PDF guide</b> to MailerLite's file manager or your WordPress media library, and copy the link.</li>
+        <li><b>Save your images:</b> the RNS logo and the six Minis class graphics from your website's Minis page.</li>
+      </ul>
+      <h4>Brand settings for the page builder</h4>
+      <table>
+        <tr><th>Use</th><th>Colour</th></tr>
+        <tr><td>Main purple (header, final section)</td><td><span class="swatch" style="background:#723C8E"></span>#723C8E</td></tr>
+        <tr><td>Magenta (small headings, accents)</td><td><span class="swatch" style="background:#A92384"></span>#A92384</td></tr>
+        <tr><td>Buttons</td><td><span class="swatch" style="background:#32A4DD"></span>#32A4DD</td></tr>
+        <tr><td>Pale section background</td><td><span class="swatch" style="background:#F7F2FA"></span>#F7F2FA</td></tr>
+        <tr><td>Headings / body text</td><td><span class="swatch" style="background:#222"></span>#222222 / <span class="swatch" style="background:#555"></span>#555555</td></tr>
+      </table>
+      <p>Font: <b>Montserrat</b> throughout, which matches your website.</p>
+    </section>
+
+    <!-- 6 -->
+    <section class="s" id="page1">
+      <span class="eyebrow">6 · Page 1</span>
+      <h2>The Minis guide page</h2>
+      <p>In MailerLite: <b>Sites → Landing pages → Create</b>. Start from a blank template, name it <code>Minis Parent Guide</code> and set the URL to <code>minis-guide</code>. Build these blocks top to bottom, using the <a href="../minis-guide/">test page</a> as your visual reference.</p>
+
+      <div class="block"><h4>Block 1 · Header with form (purple background)</h4><ul>
+        <li>RNS logo, small, top left</li>
+        <li>Small text: FREE PARENT GUIDE · AGES 3–5 · SHERWOOD, NOTTINGHAM</li>
+        <li>Heading: <b>Dance classes for 3–5 year olds in Sherwood, Nottingham</b></li>
+        <li>Text: Download our free Minis Parent Guide to see our preschool classes, class times and prices, and find out how to book a trial session for your child.</li>
+        <li>Bullets: Our five Minis classes: ballet, tap, acro tumble, and jazz &amp; street · Class days and times · Help choosing the right class for your child · Prices and how to book a trial session</li>
+        <li>Form in a white box: heading <b>Get the free Minis Parent Guide</b>, text "Fill in your details and we'll email the guide to you." Fields: First name, Email, Phone. Button: <b>Send me the guide</b>. Small print: "We'll only email you about our Minis classes. You can unsubscribe at any time."</li>
+      </ul></div>
+
+      <div class="block"><h4>Block 2 · What the guide covers (white, four columns)</h4><ul>
+        <li>Intro: If your child hasn't been to dance classes before, the guide explains how our Minis classes work and helps you choose the right one.</li>
+        <li><b>The classes:</b> What your child will do in each Minis class.</li>
+        <li><b>Days &amp; times:</b> Our preschool timetable, so you can find a class that fits around nursery and work.</li>
+        <li><b>Choosing a class:</b> Which class suits your child's interests.</li>
+        <li><b>Their first class:</b> What happens on the day and how to book a trial session.</li>
+      </ul></div>
+
+      <div class="block"><h4>Block 3 · Dance classes for ages 3–5 (pale background, five class cards)</h4><ul>
+        <li><b>Bertie Bear's Preschool Ballet:</b> Ballet basics through a new Bertie Bear adventure every week.</li>
+        <li><b>Mini Movers:</b> An introduction to jazz and street dance, learning rhythm and coordination.</li>
+        <li><b>Mini Tumble:</b> An introduction to acro, building strength, balance and tumbling skills.</li>
+        <li><b>Mini Ballet &amp; Tap:</b> Ballet and tap in one 45-minute class.</li>
+        <li><b>Mini Movers + Tumble:</b> Jazz, street and tumble in one 45-minute class.</li>
+        <li>Under the cards: "Class times, prices and help choosing a class are in the free guide." Button: <b>Send me the free guide</b>, linked to the form.</li>
+      </ul></div>
+
+      <div class="block"><h4>Block 4 · Why parents choose Rhythm Nation Studios (white, two columns)</h4><ul>
+        <li><b>No more than 10 children per class:</b> Your child's teacher can give them proper attention.</li>
+        <li><b>Viewing lounge for parents:</b> Children go into class on their own, and you can watch from our viewing lounge.</li>
+        <li><b>Classes designed for preschoolers:</b> Our Bertie Bear ballet programme and Preschool Acro syllabus are written for 3–5 year olds.</li>
+        <li><b>Classes from age 3 upwards:</b> Many of our Minis carry on dancing with us through Juniors and Seniors.</li>
+        <li>Add 2–3 real parent quotes here if you have them.</li>
+      </ul></div>
+
+      <div class="block"><h4>Block 5 · Common questions (pale background)</h4><ul>
+        <li><b>What age are Minis classes for?</b> Children aged 3–5, up to Reception / Foundation stage. If your child is 5 and in Year 1, our Juniors classes are the right fit.</li>
+        <li><b>Do I stay with my child?</b> Children go into class on their own, but you're very welcome to stay on site and watch from our viewing lounge.</li>
+        <li><b>Does my child need to be toilet trained?</b> Yes, we ask that children are out of nappies. We understand the odd accident can happen while they're still learning.</li>
+        <li><b>Can we try a class first?</b> Yes, every Minis class offers a one-session trial. The guide explains how to book.</li>
+        <li><b>Where are you?</b> Rhythm Nation Studios, Unit C14/C15, Hartley Business Centre, Haydn Road, Sherwood, Nottingham NG5 1DG.</li>
+      </ul></div>
+
+      <div class="block"><h4>Block 6 · Final call to action (purple background)</h4><ul>
+        <li>Heading: <b>Find the right class for your child</b></li>
+        <li>Text: Download the free Minis Parent Guide.</li>
+        <li>White button: <b>Get the free guide</b>, linked to the form.</li>
+      </ul></div>
+      <p>In the page settings, add your <b>Meta pixel</b> so visits to this page are tracked.</p>
+    </section>
+
+    <!-- 7 -->
+    <section class="s" id="page2">
+      <span class="eyebrow">7 · Page 2</span>
+      <h2>The thank-you and booking page</h2>
+      <p>Create a second landing page called <code>Book a Minis Trial</code> with the URL <code>minis-trial</code>. This page is where parents land after signing up, and it's where the guide and every email send them to book. Use the <a href="../minis-trial/?guide=thanks">test page</a> as your reference.</p>
+      <div class="block"><h4>Header (purple background)</h4><ul>
+        <li>Thank-you line: <b>Thank you, we've emailed your Minis Parent Guide.</b> If you can't see it, please check your junk folder. You can also book a trial below.</li>
+        <li>Heading: <b>Book a Minis trial</b></li>
+        <li>Text: Choose a class and day below. Each button opens that class on our booking system, where you can pick a date and pay for your trial session.</li>
+      </ul></div>
+      <div class="block"><h4>Prices</h4><ul>
+        <li>30-minute classes · Trial £9 · then £33.50/month</li>
+        <li>45-minute combo classes · Trial £10 · then £37.50/month</li>
+      </ul></div>
+      <h4>Class buttons (current term: Sept–Dec 2026)</h4>
+      <table>
+        <tr><th>Class</th><th>Button</th><th>Link</th></tr>
+        <tr><td>Bertie Bear's Preschool Ballet</td><td>Thu 4:00pm</td><td><code>rhythm-nation-studios.classforkids.io/info/32</code></td></tr>
+        <tr><td></td><td>Sat 8:45am</td><td><code>rhythm-nation-studios.classforkids.io/info/33</code></td></tr>
+        <tr><td></td><td>Sat 1:30pm</td><td><code>rhythm-nation-studios.classforkids.io/info/66</code></td></tr>
+        <tr><td>Mini Movers</td><td>Thu 4:00pm</td><td><code>rhythm-nation-studios.classforkids.io/info/34</code></td></tr>
+        <tr><td></td><td>Sat 9:30am</td><td><code>rhythm-nation-studios.classforkids.io/info/35</code></td></tr>
+        <tr><td>Mini Tumble</td><td>Wed 4:00pm</td><td><code>rhythm-nation-studios.classforkids.io/info/29</code></td></tr>
+        <tr><td></td><td>Sat 9:30am</td><td><code>rhythm-nation-studios.classforkids.io/info/30</code></td></tr>
+        <tr><td>Mini Ballet &amp; Tap</td><td>Fri 4:00pm</td><td><code>rhythm-nation-studios.classforkids.io/info/117</code></td></tr>
+        <tr><td>Mini Movers + Tumble</td><td>Fri 4:00pm</td><td><code>rhythm-nation-studios.classforkids.io/info/118</code></td></tr>
+      </table>
+      <div class="block"><h4>Footer (pale background)</h4><ul>
+        <li>Heading: <b>Not sure which class to choose?</b></li>
+        <li>Text: Give us a call on 07585 506787 or email info@rnstudiosnotts.co.uk and we'll help.</li>
+        <li>Address line underneath.</li>
+      </ul></div>
+      <p>Add your <b>Meta pixel</b> to this page too. Once it's published, copy its web address, which you'll need in sections 8 and 9.</p>
+    </section>
+
+    <!-- 8 -->
+    <section class="s" id="form">
+      <span class="eyebrow">8 · Form &amp; redirect</span>
+      <h2>Connect the form</h2>
+      <ol class="steps">
+        <li>On the guide page's form, set it to add subscribers to the <code>Minis Guide</code> group.</li>
+        <li>Set <b>After submission</b> to <b>Redirect to URL</b>, and use your booking page address with <code>?guide=thanks</code> on the end, for example <code>…/minis-trial?guide=thanks</code>.</li>
+        <li>Only parents who've just signed up land on that exact address, which is how Meta can count each one as a Lead (section 10).</li>
+        <li>Test it: sign up with your own email and check you land on the booking page and receive Email 1.</li>
+      </ol>
+    </section>
+
+    <!-- 9 -->
+    <section class="s" id="emails">
+      <span class="eyebrow">9 · The 5 emails</span>
+      <h2>Your Minis follow-up sequence</h2>
+      <p>In MailerLite: <b>Automations → Create</b>. Trigger: <b>When subscriber joins group "Minis Guide"</b>. Add the five emails below with the delays shown. Send them from <b>Nicola at Rhythm Nation Studios</b>.</p>
+      <p>Wherever an email says <b>[BUTTON]</b>, add a button linking to your booking page. Email 1 also needs a button linking to the PDF. Open each email, then tap <b>Copy</b> and paste it into MailerLite.</p>
+
+      <details class="email" open><summary>Email 1: Your Minis Parent Guide <small>Send immediately</small></summary><div class="body">
+        <div class="subj"><b>Subject:</b> Your Minis Parent Guide · <b>Preview:</b> Our dance classes for 3–5 year olds</div>
+<pre class="copy-src">Hi {$name},
+
+Thank you for requesting our Minis Parent Guide. You can download it here:
+
+[BUTTON: Download the guide → link to the PDF]
+
+In the guide you'll find:
+- Our five preschool classes and what your child will do in each one
+- Class days and times
+- Help choosing the right class for your child
+- What happens at their first class
+
+If you already know which class you'd like, you can book a trial session here:
+
+[BUTTON: Book a Minis trial]
+
+If you have any questions, just reply to this email.
+
+Nicola & the RNS team
+Rhythm Nation Studios, Sherwood</pre>
+        <button class="copy">Copy email</button></div></details>
+
+      <details class="email"><summary>Email 2: Which Minis class is right for your child? <small>1 day later</small></summary><div class="body">
+        <div class="subj"><b>Subject:</b> Which Minis class is right for your child? · <b>Preview:</b> Ballet, tap, tumble or street</div>
+<pre class="copy-src">Hi {$name},
+
+Parents often ask us which class they should choose. Here's a quick guide:
+
+- Loves stories and twirling? Bertie Bear's Preschool Ballet. Each week your child follows a new adventure with Bertie Bear and learns the basics of ballet.
+- Loves dancing to music? Mini Movers. An introduction to jazz and street dance.
+- Loves climbing and roly-polys? Mini Tumble. Strength, balance and tumbling skills using our Preschool Acro syllabus.
+- Want two styles in one class? Our 45-minute combo classes on Fridays at 4pm: Mini Ballet & Tap, or Mini Movers + Tumble.
+
+Every class offers a one-session trial (£9 for 30-minute classes, £10 for combo classes), so your child can try it before you sign up.
+
+[BUTTON: Book a Minis trial]
+
+If you're still not sure, reply and tell us a bit about your child. We'll suggest a class.
+
+Nicola</pre>
+        <button class="copy">Copy email</button></div></details>
+
+      <details class="email"><summary>Email 3: What happens at your child's first class <small>3 days later</small></summary><div class="body">
+        <div class="subj"><b>Subject:</b> What happens at your child's first class · <b>Preview:</b> How our Minis classes work</div>
+<pre class="copy-src">Hi {$name},
+
+Many parents wonder how their child will get on at their first class, so here's how it works at RNS.
+
+- Children go into class on their own. Most settle in quickly once the class gets going.
+- You can stay on site and watch from our viewing lounge.
+- There are no more than 10 children in each class.
+- Classes last 30 minutes, or 45 minutes for combo classes.
+
+A few things that help on the day: talk to your child about the class beforehand, take them to the toilet before it starts, and bring a water bottle.
+
+[BUTTON: Book a Minis trial]
+
+Nicola</pre>
+        <button class="copy">Copy email</button></div></details>
+
+      <details class="email"><summary>Email 4: About Rhythm Nation Studios <small>5 days later</small></summary><div class="body">
+        <div class="subj"><b>Subject:</b> About Rhythm Nation Studios · <b>Preview:</b> Dance classes from age 3 upwards</div>
+<pre class="copy-src">Hi {$name},
+
+Many of the families who join us have never done dance classes before. Our Minis classes are designed for them, and we like parents to know what their child is learning and why.
+
+Our preschool classes use programmes written for 3–5 year olds, including our Bertie Bear ballet programme and our Preschool Acro syllabus.
+
+Lots of our Minis start with us at three and carry on dancing with us through Juniors and Seniors.
+
+[ADD A REAL QUOTE FROM A MINIS PARENT HERE]
+
+If you'd like to bring your child along for a trial session, you can book here:
+
+[BUTTON: Book a Minis trial]
+
+Nicola</pre>
+        <button class="copy">Copy email</button></div></details>
+
+      <details class="email"><summary>Email 5: Minis trial sessions <small>7 days later</small></summary><div class="body">
+        <div class="subj"><b>Subject:</b> Minis trial sessions · <b>Preview:</b> Classes have a maximum of 10 children</div>
+<pre class="copy-src">Hi {$name},
+
+Our Minis classes have a maximum of 10 children each, and some classes, such as Saturday morning Mini Movers, currently have a waiting list.
+
+If you'd like to try a class, you can book a trial session here:
+
+- 30-minute classes: £9 trial, then £33.50 a month
+- 45-minute combo classes: £10 trial, then £37.50 a month
+
+[BUTTON: Book a Minis trial]
+
+If now isn't the right time, or you have any questions, just reply to this email.
+
+Nicola
+Rhythm Nation Studios · 07585 506787 · info@rnstudiosnotts.co.uk</pre>
+        <button class="copy">Copy email</button></div></details>
+      <p style="font-size:14px;color:var(--muted)">If your MailerLite first-name tag looks different from <code>{$name}</code>, use yours instead.</p>
+    </section>
+
+    <!-- 10 -->
+    <section class="s" id="meta">
+      <span class="eyebrow">10 · Meta tracking &amp; ads</span>
+      <h2>Tell Meta what a lead is, then launch</h2>
+      <h4>Create the conversion</h4>
+      <ol class="steps">
+        <li>Events Manager → <b>Custom conversions → Create</b>.</li>
+        <li>Name: <code>Minis Guide Lead</code>. Rule: <b>URL contains</b> <code>guide=thanks</code>. Category: <b>Lead</b>.</li>
+        <li>Sign up once yourself, then check the conversion shows activity.</li>
+      </ol>
+      <h4>Campaign settings</h4>
+      <table>
+        <tr><th>Setting</th><th>What to choose</th></tr>
+        <tr><td>Objective</td><td>Leads</td></tr>
+        <tr><td>Conversion location</td><td>Website, optimised for the <b>Minis Guide Lead</b> custom conversion</td></tr>
+        <tr><td>Budget</td><td>£5–£10 a day to start</td></tr>
+        <tr><td>Location</td><td>A sensible driving radius around the studio (NG5 1DG)</td></tr>
+        <tr><td>Audience</td><td>Keep it broad within your area and let Meta find parents of preschoolers. Your ideal-client details go into the ad copy rather than heavy targeting.</td></tr>
+        <tr><td>Creative</td><td>Your best Minis video or photo (the Bertie Bear video is a strong start)</td></tr>
+        <tr><td>Call to action</td><td>"Download our free Minis Parent Guide", linking to your guide page</td></tr>
+        <tr><td>Patience</td><td>Leave it alone for 5–7 days while Meta learns</td></tr>
+      </table>
+      <div class="callout">Keep the old Landing Page Views campaign switched off once this goes live, so the two aren't competing for the same budget.</div>
+    </section>
+
+    <!-- 11 -->
+    <section class="s" id="content">
+      <span class="eyebrow">11 · Content worth boosting</span>
+      <h2>Choose posts with data, not Meta's "trending" nudges</h2>
+      <p>Posts Meta says are "trending" are often reaching people outside your area, and boosting them mostly spends money. Use your own numbers instead:</p>
+      <ol class="steps">
+        <li>Business Suite → <b>Insights → Content → Export data</b>.</li>
+        <li>Export Facebook and Instagram posts for the last 28–30 days (CSV).</li>
+        <li>Drop the files into ChatGPT or Claude and ask: <i>"Which of these posts performed best, and which would work as ads to get local parents booking preschool dance trials?"</i></li>
+        <li>Put your shortlist into a separate Ads Manager campaign aimed at a <b>local cold audience</b>, so you control who sees it.</li>
+      </ol>
+    </section>
+
+    <!-- 12 -->
+    <section class="s" id="launch">
+      <span class="eyebrow">12 · Launch checklist</span>
+      <h2>Tick these off before switching the ads on</h2>
+      <ul class="checks">
+        <li>One Meta pixel, receiving data, on both pages</li>
+        <li>Guide page and booking page published, and they look right on a phone</li>
+        <li>Test sign-up lands on the booking page with the thank-you message</li>
+        <li>Test subscriber appears in the <code>Minis Guide</code> group</li>
+        <li>Email 1 arrives with a working PDF link</li>
+        <li>Every class button opens the right class on ClassForKids</li>
+        <li>Automation is switched on with all five emails and delays</li>
+        <li><code>Minis Guide Lead</code> custom conversion shows your test</li>
+        <li>New Leads campaign set up, and the old Landing Page Views campaign paused</li>
+      </ul>
+    </section>
+
+    <!-- 13 -->
+    <section class="s" id="term">
+      <span class="eyebrow">13 · Each new term</span>
+      <h2>A five-minute update each term</h2>
+      <p>ClassForKids gives every class a new link each term. Update the class buttons on the <b>booking page only</b>. The guide and all five emails link to that page, so nothing else needs changing.</p>
+      <ol class="steps">
+        <li>Open your ClassForKids timetable and click <b>Info &amp; Booking</b> on each Minis class for the new term.</li>
+        <li>Copy each page's web address into the matching button on the booking page.</li>
+        <li>If times or prices change, update the booking page, and ask us for an updated PDF guide.</li>
+      </ol>
+    </section>
+
+    <!-- 14 -->
+    <section class="s" id="next">
+      <span class="eyebrow">14 · What's next</span>
+      <h2>Once this is working</h2>
+      <ul>
+        <li><b>Trial length:</b> following Louise's advice, consider whether a longer trial (more than one session) helps parents decide.</li>
+        <li><b>A "find my class" quiz:</b> parents pick a day, time and style, and see the right class straight away.</li>
+        <li><b>Copy the funnel</b> for your other two audiences: mums of 5–9s, and beginners aged 10+.</li>
+      </ul>
+    </section>
+
+  </main>
+</div>
+
+<footer class="foot">
+  <h2>Stuck, or want a hand?</h2>
+  <p>Do as much as you can, then book another marketing call. Send a quick brief beforehand and we'll use the call to get the rest built and live together.</p>
+  <p>Fee · Marketing Director, Base Brands<br><a href="https://www.instagram.com/fionachandlernolze_/">Instagram @fionachandlernolze_</a> · <a href="mailto:fiona@basebrandsagency.com">fiona@basebrandsagency.com</a></p>
+</footer>
+
+<script>
+document.querySelectorAll('button.copy').forEach(function(b){
+  b.addEventListener('click',function(){
+    var t=b.parentElement.querySelector('.copy-src').innerText;
+    var s=b.parentElement.querySelector('.subj').innerText;
+    var txt=s+'\n\n'+t;
+    var done=function(){b.textContent='Copied ✓';b.classList.add('done');setTimeout(function(){b.textContent='Copy email';b.classList.remove('done')},1800)};
+    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(txt).then(done,function(){fallback(txt);done()})}else{fallback(txt);done()}
+  });
+});
+function fallback(txt){var ta=document.createElement('textarea');ta.value=txt;document.body.appendChild(ta);ta.select();try{document.execCommand('copy')}catch(e){}document.body.removeChild(ta)}
+</script>
+</body>
+</html>
