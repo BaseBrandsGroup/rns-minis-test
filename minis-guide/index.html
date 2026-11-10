@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow"><title>Free Minis Parent Guide | Rhythm Nation Studios</title>
+<style>html,body{margin:0;padding:0;background:#fff}</style>
+</head><body>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+.rnslp{--purple:#723C8E;--magenta:#A92384;--blue:#32A4DD;--ink:#222;--text:#555;--soft:#F7F2FA;--line:#EADFF0;
+  font-family:'Montserrat',Helvetica,Arial,sans-serif;color:var(--text);line-height:1.6;font-size:16px;-webkit-font-smoothing:antialiased}
+.rnslp *{box-sizing:border-box}
+.rnslp h1,.rnslp h2,.rnslp h3,.rnslp h4{font-family:'Montserrat',Helvetica,Arial,sans-serif;color:var(--ink);line-height:1.2;margin:0 0 .5em;padding:0}
+.rnslp p{margin:0 0 1em;padding:0}
+.rnslp ul{margin:0;padding:0;list-style:none}
+.rnslp .wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+.rnslp .eyebrow{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--magenta);margin-bottom:12px}
+.rnslp .btn{display:inline-block;background:var(--blue);color:#fff !important;font-weight:700;text-decoration:none !important;padding:15px 30px;border-radius:6px;font-size:16px;transition:transform .15s,box-shadow .15s;box-shadow:0 6px 18px rgba(50,164,221,.35)}
+.rnslp .btn:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(50,164,221,.45)}
+
+/* HERO */
+.rnslp .hero{background:linear-gradient(135deg,#4E2463 0%,var(--purple) 45%,var(--magenta) 100%);color:#fff;padding:64px 0 72px;position:relative;overflow:hidden}
+.rnslp .hero:after{content:"";position:absolute;right:-120px;top:-120px;width:420px;height:420px;border-radius:50%;background:rgba(255,255,255,.06)}
+.rnslp .hero .grid{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:start;position:relative;z-index:1}
+.rnslp .hero .logo{width:84px;height:84px;border-radius:50%;background:#fff;padding:6px;margin-bottom:22px;display:block}
+.rnslp .hero .eyebrow{color:#FFD6F0}
+.rnslp .hero h1{color:#fff;font-size:42px;font-weight:800;letter-spacing:-.01em}
+.rnslp .hero h1 span{color:#FFD6F0}
+.rnslp .hero .lead{font-size:18px;color:rgba(255,255,255,.92);max-width:540px}
+.rnslp .hero ul.ticks li{color:#fff;position:relative;padding-left:32px;margin:0 0 10px;font-weight:500}
+.rnslp .hero ul.ticks li:before{content:"✓";position:absolute;left:0;top:1px;width:22px;height:22px;border-radius:50%;background:rgba(255,255,255,.18);font-size:13px;font-weight:800;display:flex;align-items:center;justify-content:center}
+.rnslp .formcard{background:#fff;border-radius:14px;padding:28px 26px;box-shadow:0 24px 60px rgba(30,0,40,.35);color:var(--text)}
+.rnslp .formcard h2{font-size:22px;font-weight:800;margin-bottom:6px}
+.rnslp .formcard .sub{font-size:14px;margin-bottom:18px}
+.rnslp .formcard .small{font-size:12px;color:#888;margin:12px 0 0;text-align:center}
+.rnslp .ml-slot{min-height:120px}
+.rnslp .ml-placeholder{border:2px dashed var(--line);border-radius:10px;padding:22px;text-align:center;font-size:13px;color:#999;background:var(--soft)}
+
+/* SECTIONS */
+.rnslp section.block{padding:72px 0}
+.rnslp section.alt{background:var(--soft)}
+.rnslp .center{text-align:center;max-width:720px;margin:0 auto 40px}
+.rnslp .center h2{font-size:32px;font-weight:800}
+.rnslp .inside{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.rnslp .inside .card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:24px 20px}
+.rnslp .inside .num{width:40px;height:40px;border-radius:10px;background:var(--purple);color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center;margin-bottom:14px}
+.rnslp .inside h3{font-size:17px;font-weight:700}
+.rnslp .inside p{font-size:14px;margin:0}
+
+.rnslp .classes{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
+.rnslp .cls{background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 4px 16px rgba(114,60,142,.10);display:flex;flex-direction:column}
+.rnslp .cls img{width:100%;aspect-ratio:1/1;object-fit:cover;display:block}
+.rnslp .cls .body{padding:14px 14px 16px}
+.rnslp .cls h3{font-size:15px;font-weight:700;margin-bottom:4px}
+.rnslp .cls p{font-size:13px;margin:0}
+.rnslp .note{text-align:center;margin-top:28px;font-weight:600;color:var(--ink)}
+
+.rnslp .why{display:grid;grid-template-columns:repeat(2,1fr);gap:22px 40px;max-width:900px;margin:0 auto}
+.rnslp .why > div{display:flex;gap:16px;align-items:flex-start}
+.rnslp .why .ic{flex:0 0 46px;height:46px;border-radius:50%;background:linear-gradient(135deg,var(--purple),var(--magenta));color:#fff;font-size:20px;display:flex;align-items:center;justify-content:center}
+.rnslp .why h3{font-size:17px;font-weight:700;margin-bottom:2px}
+.rnslp .why p{font-size:14px;margin:0}
+
+.rnslp .faq{max-width:760px;margin:0 auto}
+.rnslp .faq details{background:#fff;border:1px solid var(--line);border-radius:10px;margin-bottom:12px;padding:0 20px}
+.rnslp .faq summary{cursor:pointer;font-weight:700;color:var(--ink);padding:18px 0;list-style:none;position:relative;padding-right:30px}
+.rnslp .faq summary::-webkit-details-marker{display:none}
+.rnslp .faq summary:after{content:"+";position:absolute;right:0;top:14px;font-size:24px;color:var(--magenta);font-weight:600}
+.rnslp .faq details[open] summary:after{content:"–"}
+.rnslp .faq details p{font-size:15px;padding-bottom:18px;margin:0}
+
+.rnslp .final{background:linear-gradient(135deg,var(--purple),var(--magenta));color:#fff;text-align:center;padding:64px 0}
+.rnslp .final h2{color:#fff;font-size:32px;font-weight:800}
+.rnslp .final p{color:rgba(255,255,255,.9);max-width:560px;margin:0 auto 26px;font-size:17px}
+
+@media (max-width:980px){
+  .rnslp .hero .grid{grid-template-columns:1fr;gap:32px}
+  .rnslp .inside{grid-template-columns:repeat(2,1fr)}
+  .rnslp .classes{grid-template-columns:repeat(3,1fr)}
+}
+@media (max-width:640px){
+  .rnslp .hero{padding:40px 0 48px}
+  .rnslp .hero h1{font-size:30px}
+  .rnslp .hero .lead{font-size:16px}
+  .rnslp section.block{padding:52px 0}
+  .rnslp .center h2,.rnslp .final h2{font-size:25px}
+  .rnslp .inside,.rnslp .why{grid-template-columns:1fr}
+  .rnslp .classes{grid-template-columns:repeat(2,1fr);gap:12px}
+}
+</style>
+
+<div class="rnslp">
+
+  <!-- ============ HERO + FORM ============ -->
+  <section class="hero">
+    <div class="wrap grid">
+      <div>
+        <img class="logo" src="https://rnstudiosnotts.co.uk/wp-content/uploads/2026/08/RNS-LOGO-Non-transparent.png" alt="Rhythm Nation Studios logo">
+        <span class="eyebrow">Free parent guide · Ages 3–5 · Sherwood, Nottingham</span>
+        <h1>Dance classes for <span>3–5 year olds</span> in Sherwood, Nottingham</h1>
+        <p class="lead">Download our free Minis Parent Guide to see our preschool classes, class times and prices, and find out how to book a trial session for your child.</p>
+        <ul class="ticks">
+          <li>Our five Minis classes: ballet, tap, acro tumble, and jazz &amp; street</li>
+          <li>Class days and times</li>
+          <li>Help choosing the right class for your child</li>
+          <li>Prices and how to book a trial session</li>
+        </ul>
+      </div>
+
+      <div class="formcard" id="rns-guide-form">
+        <h2>Get the free Minis Parent Guide</h2>
+        <p class="sub">Fill in your details and we'll email the guide to you.</p>
+
+        <div class="ml-slot">
+          <!-- >>> PASTE MAILERLITE FORM EMBED CODE HERE <<< (delete the placeholder div below once pasted) -->
+          <div class="ml-placeholder">MailerLite form goes here<br>(First name · Email · Phone)</div>
+        </div>
+
+        <p class="small">We'll only email you about our Minis classes. You can unsubscribe at any time.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WHAT'S INSIDE ============ -->
+  <section class="block">
+    <div class="wrap">
+      <div class="center">
+        <span class="eyebrow">Inside the guide</span>
+        <h2>What the guide covers</h2>
+        <p>If your child hasn't been to dance classes before, the guide explains how our Minis classes work and helps you choose the right one.</p>
+      </div>
+      <div class="inside">
+        <div class="card"><div class="num">1</div><h3>The classes</h3><p>What your child will do in each Minis class.</p></div>
+        <div class="card"><div class="num">2</div><h3>Days &amp; times</h3><p>Our preschool timetable, so you can find a class that fits around nursery and work.</p></div>
+        <div class="card"><div class="num">3</div><h3>Choosing a class</h3><p>Which class suits your child's interests.</p></div>
+        <div class="card"><div class="num">4</div><h3>Their first class</h3><p>What happens on the day and how to book a trial session.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CLASSES PREVIEW ============ -->
+  <section class="block alt">
+    <div class="wrap">
+      <div class="center">
+        <span class="eyebrow">Our Minis classes</span>
+        <h2>Dance classes for ages 3–5</h2>
+      </div>
+      <div class="classes">
+        <div class="cls">
+          <img src="https://rnstudiosnotts.co.uk/wp-content/uploads/2026/08/E648F638-D7F1-45C7-967D-4CEF255C1DB5.png" alt="Bertie Bear's Preschool Ballet Academy">
+          <div class="body"><h3>Bertie Bear's Preschool Ballet</h3><p>Ballet basics through a new Bertie Bear adventure every week.</p></div>
+        </div>
+        <div class="cls">
+          <img src="https://rnstudiosnotts.co.uk/wp-content/uploads/2026/08/IMG_D69C83DC-6F55-4EB7-B215-BF5517AC65FC.jpeg" alt="Mini Movers">
+          <div class="body"><h3>Mini Movers</h3><p>An introduction to jazz and street dance, learning rhythm and coordination.</p></div>
+        </div>
+        <div class="cls">
+          <img src="https://rnstudiosnotts.co.uk/wp-content/uploads/2026/08/IMG_24A5AE75-85C0-4FC0-92FD-32C47D5CDD3D.jpeg" alt="Mini Tumble">
+          <div class="body"><h3>Mini Tumble</h3><p>An introduction to acro, building strength, balance and tumbling skills.</p></div>
+        </div>
+        <div class="cls">
+          <img src="https://rnstudiosnotts.co.uk/wp-content/uploads/2026/08/IMG_49B1127D-5A10-48E8-B20D-FD92235AB166.jpeg" alt="Mini Ballet and Tap combo class">
+          <div class="body"><h3>Mini Ballet &amp; Tap</h3><p>Ballet and tap in one 45-minute class.</p></div>
+        </div>
+        <div class="cls">
+          <img src="https://rnstudiosnotts.co.uk/wp-content/uploads/2026/08/IMG_9C7EAEBA-34F5-4F5A-8511-2C6479454BC4.jpeg" alt="Mini Movers and Tumble combo class">
+          <div class="body"><h3>Mini Movers + Tumble</h3><p>Jazz, street and tumble in one 45-minute class.</p></div>
+        </div>
+      </div>
+      <p class="note">Class times, prices and help choosing a class are in the free guide.</p>
+      <p style="text-align:center;margin:18px 0 0"><a class="btn" href="#rns-guide-form">Send me the free guide</a></p>
+    </div>
+  </section>
+
+  <!-- ============ WHY RNS ============ -->
+  <section class="block">
+    <div class="wrap">
+      <div class="center">
+        <span class="eyebrow">About us</span>
+        <h2>Why parents choose Rhythm Nation Studios</h2>
+      </div>
+      <div class="why">
+        <div><div class="ic">10</div><div><h3>No more than 10 children per class</h3><p>Your child's teacher can give them proper attention.</p></div></div>
+        <div><div class="ic">✓</div><div><h3>Viewing lounge for parents</h3><p>Children go into class on their own, and you can watch from our viewing lounge.</p></div></div>
+        <div><div class="ic">★</div><div><h3>Classes designed for preschoolers</h3><p>Our Bertie Bear ballet programme and Preschool Acro syllabus are written for 3–5 year olds.</p></div></div>
+        <div><div class="ic">↑</div><div><h3>Classes from age 3 upwards</h3><p>Many of our Minis carry on dancing with us through Juniors and Seniors.</p></div></div>
+      </div>
+
+      <!--
+        OPTIONAL PARENT REVIEWS: add 2–3 real quotes from Minis parents here. Copy this block for each one:
+        <div style="max-width:760px;margin:48px auto 0;text-align:center">
+          <p style="font-size:19px;font-style:italic;color:#222">"Quote from a real parent goes here."</p>
+          <p style="font-weight:700;color:#A92384">— Parent name, Mum of [child], age 4</p>
+        </div>
+      -->
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="block alt">
+    <div class="wrap">
+      <div class="center">
+        <span class="eyebrow">Questions</span>
+        <h2>Common questions</h2>
+      </div>
+      <div class="faq">
+        <details><summary>What age are Minis classes for?</summary><p>Children aged 3–5, up to Reception / Foundation stage. If your child is 5 and in Year 1, our Juniors classes are the right fit.</p></details>
+        <details><summary>Do I stay with my child?</summary><p>Children go into class on their own, but you're very welcome to stay on site and watch from our viewing lounge.</p></details>
+        <details><summary>Does my child need to be toilet trained?</summary><p>Yes, we ask that children are out of nappies. We understand the odd accident can happen while they're still learning.</p></details>
+        <details><summary>Can we try a class first?</summary><p>Yes, every Minis class offers a one-session trial. The guide explains how to book.</p></details>
+        <details><summary>Where are you?</summary><p>Rhythm Nation Studios, Unit C14/C15, Hartley Business Centre, Haydn Road, Sherwood, Nottingham NG5 1DG.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FINAL CTA ============ -->
+  <section class="final">
+    <div class="wrap">
+      <h2>Find the right class for your child</h2>
+      <p>Download the free Minis Parent Guide.</p>
+      <a class="btn" href="#rns-guide-form" style="background:#fff;color:#723C8E !important;box-shadow:0 8px 24px rgba(0,0,0,.2)">Get the free guide</a>
+    </div>
+  </section>
+
+</div>
+
+</body></html>
